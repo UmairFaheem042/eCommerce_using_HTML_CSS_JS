@@ -1,0 +1,77 @@
+.about{
+    /* background-color: aqua; */
+    padding: 5px 20px 20px;
+    height: 88vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    
+}
+
+.about h2{
+    padding-top: 4rem;
+}
+.about .mission{
+    text-align: center;
+    /* background-color: aquamarine; */
+    max-width: 1200px;
+    margin: 2rem auto 4rem;
+
+}
+
+.about .team{
+    /* background-color: blanchedalmond; */
+    text-align: center;
+    /* display: flex; */
+    /* gap: 1rem; */
+    /* margin-right: 2rem; */
+}
+
+.team .team-box{
+    /* background-color: aqua; */
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin-top: 1rem; */
+    padding: 20px 20px 50px;
+}
+.team .team-box .person{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    /* text-align: center; */
+    gap: 1rem;
+}
+
+.team .team-box .left img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #121212;
+    box-shadow: 5px 5px 0px rgb(0, 0, 0);
+    transition: 0.2s ease;
+}
+
+.team .team-box .left img:hover{
+    box-shadow: 0px 0px 0px rgb(0, 0, 0);
+
+}
+
+.team .team-box .detail{
+    /* background-color: blueviolet; */
+    /* text-align: start; */
+    /* font-size: 1rem; */
+}
+
+.detail h4{
+    font-size: 1rem;
+}
+
+.detail span{
+    font-size: 0.9rem;
+}

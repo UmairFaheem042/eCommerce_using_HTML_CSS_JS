@@ -1,0 +1,61 @@
+.pro-container.category-container{
+    /* background-color: rebeccapurple; */
+    margin-block: 2rem;
+    gap: 2rem;
+    /* padding-bottom: 10px; */
+}
+
+.pagination{
+    margin: 1rem 0 2rem;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.pagination a{
+    text-align: center;
+    padding: 1rem;
+    min-width: 50px;
+    font-weight: 400;
+    border-radius: 4px;
+    transition: 0.2s ease;
+    border: 3px solid #121212;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 1);
+}
+
+.pagination a span{
+    padding: 0 0.1rem;
+    font-weight: 600;
+}
+
+.pagination a.active-page, .pagination a:hover{
+    background-color: #088178;
+    border: 3px solid #121212;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 1);
+    color: #fff;
+    font-weight: 600;
+}
+
+.pagination a.icon{
+    width: 100px;    
+}
+
+@media (max-width: 768px) {
+
+    .pagination{
+        gap: 0.5rem;
+    }
+
+    .pagination a{
+        padding: 0.8rem;
+        font-size: 0.8rem;
+    }   
+
+    .pagination a.icon{
+        padding-inline: 1.5rem;     
+    }
+
+}  

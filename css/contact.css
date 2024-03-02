@@ -1,0 +1,176 @@
+#contact {
+  /* background-color: aliceblue; */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 20px;
+  gap: 4rem;
+  margin-bottom: 4rem;
+  /* height: 60vh; */
+}
+
+#contact .details {
+  /* background-color: beige; */
+  width: 40%;
+  text-align: start;
+}
+
+.details h2 {
+  margin: 1rem 0;
+  line-height: 1;
+  font-size: 2rem;
+}
+
+.details h3 {
+  margin-bottom: 1rem;
+}
+
+.details ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.details ul li i {
+  font-weight: 400;
+}
+
+.details ul li span {
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+
+.mapouter {
+  background-color: rebeccapurple;
+  position: relative;
+  /* text-align: right; */
+  height: 400px;
+  width: 50%;
+  display: none;
+}
+
+.gmap_canvas {
+  border: 2px solid;
+  overflow: hidden;
+  background: none !important;
+  height: 400px;
+  width: 50%;
+  display: none;
+}
+
+.map {
+  display: flex;
+  /* align-items: center; */
+  /* width: 40%; */
+  justify-content: center;
+}
+.map iframe {
+  /* background-color: red; */
+  border-radius: 20px;
+  border: 3px solid #121212;
+  box-shadow: 10px 10px 0 rgb(0, 0, 0);
+  height: 400px;
+  width: 45vw;
+  transition: 0.2s ease;
+}
+
+.map iframe:hover {
+  box-shadow: 0 0 0 rgb(0, 0, 0);
+}
+
+.contact{
+  margin-top: 2.4rem;
+  /* background-color: aliceblue; */
+  /* text-align: start; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.contact span, .contact h2{
+  line-height: 1;
+  /* background-color: #088178; */
+  /* text-align: start; */
+}
+
+
+.contact h2{
+  /* font-size: 10vw; */
+
+}
+
+.contact input, form textarea{
+  width: 60%;
+  max-width: 600px;
+  font-weight: 600;
+  /* height: 50px; */
+  padding: 10px;
+  border: 3px solid #121212;
+  box-shadow: 5px 5px 0 rgb(0, 0, 0);
+  outline: none;
+  border-radius: 5px;
+  transition: 0.2s ease;
+}
+
+
+.contact input:hover, 
+.contact input:focus,
+.contact textarea:hover,
+.contact textarea:focus{
+  box-shadow: 0px 0px 0 rgb(0, 0, 0);
+  
+}
+
+
+
+.contact input{
+  height: 50px;
+}
+
+.contact textarea{
+  resize: none;
+}
+
+.contact button{
+  background: #fff;
+  border: 3px solid #121212;
+  box-shadow: 5px 5px 0 rgb(0, 0, 0);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  /* width: 10vw; */
+  transition: 0.2s ease;
+  font-weight: 600;
+}
+
+.contact button:hover{
+  box-shadow: 0 0 0 rgb(0, 0, 0);
+  background-color: #088178;
+  color: #fff;
+}
+
+
+@media (max-width: 800px) {
+
+    #contact .details{
+        text-align: start;
+        width: 100%;
+    }
+  .map {
+    width: 100%;
+  }
+
+  .map iframe {
+    /* background-color: red; */
+    height: 400px;
+    width: 100%;
+  }
+
+  .contact input, form textarea{
+    width: 100%;
+  }
+}
+
